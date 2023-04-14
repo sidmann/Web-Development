@@ -1,0 +1,71 @@
+<form>
+	State : <select name="state" onchange="populateDistricts()">
+				<option value="0"> SELECT </option>
+				<option value="1"> KARNATAKA </option>
+				<option value="2"> ANDRA </option>
+				<option value="3"> TELANGANA </option>
+				<option value="4"> TAMILNADU </option>
+			</select> </br>
+	<div id="districtsDiv">
+		District : <select name="district" onclick="checkStateSelection()">
+						<option value="0">SELECT STATE</option>
+				   </select>
+	</div>
+
+	......</br>
+	......</br>
+	......</br>
+	......</br>
+</form>
+
+<script>
+	function checkStateSelection()
+	{
+		var myForm = document.forms[0];
+		var myState = myForm.state;
+		if(myState.value == "0")
+		{
+			alert("PLS SELECT STATE FIRST");
+			myState.focus();
+		}
+	}
+	function populateDistricts()
+	{
+		var d1 = "District : <select name='district' "+			
+				 "onclick='checkStateSelection()'>" + 
+				 "<option value='0'>SELECT STATE</option>"
+		var myForm = document.forms[0];
+		var myState = myForm.state;
+		if(myState.value == "1")
+		{
+			d1 += "<option value='1'>Bangalore</option>";
+			d1 += "<option value='2'>Mysore</option>";
+			d1 += "<option value='3'>Ballary</option>";
+		}
+		else if(myState.value == "2")
+		{
+			d1 += "<option value='4'>Vijayawada</option>";
+			d1 += "<option value='5'>Kadapa</option>";
+			d1 += "<option value='6'>Chittor</option>";
+		}
+		else if(myState.value == "3")
+		{
+			d1 += "<option value='7'>Hyderabad</option>";
+			d1 += "<option value='8'>Nalgonda</option>";
+			d1 += "<option value='9'>Rangareddy</option>";
+		}
+		else if(myState.value == "4")
+		{
+			d1 += "<option value='10'>Chennai</option>";
+			d1 += "<option value='11'>Vellore</option>";
+			d1 += "<option value='12'>Koimbatture</option>";
+		}
+		d1 += "</select>";
+		document.getElementById("districtsDiv").innerHTML = d1;
+	}
+</script>
+
+
+
+
+

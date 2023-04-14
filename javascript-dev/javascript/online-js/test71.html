@@ -1,0 +1,121 @@
+<p id="data1"></p>
+<script>
+	var data = [
+		{
+			firstName: "hello",
+			lastName: "btm",
+			age: 22,
+			weight: 57.8
+		},
+		{
+			firstName: "babu",
+			lastName: "rao",
+			age: 25,
+			weight: 47.8
+		},
+
+		{
+			firstName: "manu",
+			lastName: "kumar",
+			age: 35,
+			weight: 67.8
+		},
+
+		{
+			firstName: "kishore",
+			lastName: "kumar",
+			age: 45,
+			weight: 65.8
+		},
+
+		{
+			firstName: "hari",
+			lastName: "naik",
+			age: 42,
+			weight: 75.8
+		}	
+	];
+	document.getElementById("data1").innerHTML = getArrayContent();
+	function getArrayContent()
+	{
+		var tableStr = "<table border='1'>";
+		tableStr += "<tr><th>SNO</th>";
+		tableStr += "<th><a href='#' onclick='sortBasedOnFirstName()'>First Name</a></th>";
+		tableStr += "<th><a href='#' onclick='sortBasedOnLastName()'>Last Name</a></th>";
+		tableStr += "<th><a href='#' onclick='sortBasedOnAge()'>Age</a></th>";
+		tableStr += "<th><a href='#' onclick='sortBasedOnWeight()'>Weight</a></th>";
+		tableStr += "</tr>";
+		for(var i = 0; i < data.length; i++)
+		{
+			tableStr += "<tr>";
+			tableStr += "<td>" + (i + 1) + "</td>";
+			tableStr += "<td>" + data[i].firstName + "</td>";
+			tableStr += "<td>" + data[i].lastName + "</td>";
+			tableStr += "<td>" + data[i].age + "</td>";
+			tableStr += "<td>" + data[i].weight + "</td>";
+			tableStr += "</tr>";
+		}
+		tableStr += "</table>";
+		return tableStr;
+	}
+	function sortBasedOnFirstName()
+	{
+		data.sort(function(x, y)
+				  {
+					 if(x.firstName > y.firstName)
+					 {
+						 return 1;
+					 }
+					 else if(x.firstName < y.firstName)
+					 {
+						 return -1;
+					 }
+					 else
+					 {
+						 return 0;
+					 }
+				  });
+		document.getElementById("data1").innerHTML = getArrayContent();
+	}
+	function sortBasedOnLastName()
+	{
+		data.sort(function(x, y)
+				  {
+					 if(x.lastName > y.lastName)
+					 {
+						 return 1;
+					 }
+					 else if(x.lastName < y.lastName)
+					 {
+						 return -1;
+					 }
+					 else
+					 {
+						 return 0;
+					 }
+				  });
+		document.getElementById("data1").innerHTML = getArrayContent();
+	}
+
+	function sortBasedOnAge()
+	{
+		data.sort(function(x, y)
+				  {
+					 return x.age - y.age;
+				  });
+		document.getElementById("data1").innerHTML = getArrayContent();
+	}
+
+	function sortBasedOnWeight()
+	{
+		data.sort(function(x, y)
+				  {
+					 return x.weight - y.weight;
+				  });
+		document.getElementById("data1").innerHTML = getArrayContent();
+	}
+</script>
+
+
+
+

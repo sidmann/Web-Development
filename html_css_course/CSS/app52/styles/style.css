@@ -1,0 +1,13 @@
+/*root and html both are similar but root having the higher secificity*/
+:root
+{
+    color: blue;
+}
+html
+{
+    color: red;
+}
+h1
+{
+    color: brown;
+}

@@ -1,0 +1,21 @@
+.special
+{
+    color: green;
+}
+p
+{
+    color: red;
+}
+p
+{
+    color: blue;
+}
+.heading
+{
+    color: green;
+}
+/*last preferance will be for universal selector*/
+*               /*universal selector*/
+{
+    color: crimson;
+}

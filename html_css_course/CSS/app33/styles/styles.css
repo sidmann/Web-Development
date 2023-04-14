@@ -1,0 +1,22 @@
+
+  h1,p
+  {
+    color: white;
+  }
+  h1
+  {
+    background: red;
+    padding: 20px;
+    border-color: black;
+    border-style: dotted;
+    border-top-width: 20px;
+    border-bottom-width: 30px;
+    border-left-width: 30px;
+    border-right-width: 20px ;
+  }
+  p
+  {
+    background: blue;
+    border: 1rem dashed red;
+    padding: 5px 20px 50px 40px;
+  }

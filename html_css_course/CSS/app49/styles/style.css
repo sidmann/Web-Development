@@ -1,0 +1,14 @@
+/* :root root element - highest specificity */
+
+:root
+{
+    font-size: 10px;
+}
+.absolute
+{
+    font-size: 24px;
+}
+.relative
+{
+    font-size: 1.5rem;
+}

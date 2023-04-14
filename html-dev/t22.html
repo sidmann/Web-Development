@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <style>
+            .container
+            {
+                width: 900px;
+                height: 300px;
+                background-color: antiquewhite;
+                display: flex;
+                /* flex-direction: row; */
+                flex-direction: column;
+                /* flex-direction: column-reverse; */
+                /* flex-direction: row-reverse; */
+            }
+            .element
+            {
+                background-color: blue;
+                border: 3px solid green;
+                width: 200px;
+                padding: 20px;
+            }
+            .element:nth-child(1)
+            {
+                background-color: red;
+                border: 5px dashed yellow;
+                /* width: 100px; */
+                flex: 1;
+            }
+            .element:nth-child(4)
+            {
+                background-color: brown;
+                border: 5px dashed red;
+                width: 100px;
+            }
+            .element:nth-child(3)
+            {
+                background-color: darkmagenta;
+                border: 5px solid yellow;
+                /* width: 100px; */
+                flex-basis: 5%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="element"><h1>i am in the div1</h1></div>
+            <div class="element"><h1>i am in the div2</h1></div>
+            <div class="element"><h1>i am in the div3</h1></div>
+            <div class="element"><h1>i am in the div4</h1></div>
+        </div>
+        <div class="container">
+            <div class="element"><h1>i am in the div1</h1></div>
+            <div class="element"><h1>i am in the div2</h1></div>
+            <div class="element"><h1>i am in the div3</h1></div>
+            <div class="element"><h1>i am in the div4</h1></div>
+        </div>
+
+    </body>
+</html>

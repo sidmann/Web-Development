@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script>
+            function test()
+            {
+                var f1 = document.forms[0];
+                var fName = f1.firstName;
+                if(fName.value.length == 0)
+                {
+                    alert("first name is required");
+                    fName.focus();
+                    return false;
+                }
+                var lName = f1.lastName;
+                if(lName.value.length == 0)
+                {
+                    alert("last name is required");
+                    lName.focus();
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form action="success.html">
+            First Name: <input type="text" name="firstName"> <br>
+            Last Name: <input type="text" name="lastName"> <br>
+            Age: <input type="text" name="age"> <br>
+            Email: <input type="text" name="email"> <br>
+            Password: <input type="password" name="password"> <br>
+            Address: 
+            <textarea name="address" rows="5" cols="15"></textarea> <br>
+            <input type="submit" value="submit" onclick="return test()">
+        </form>
+    </body>
+</html>

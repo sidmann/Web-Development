@@ -1,0 +1,15 @@
+/*% - percentage - relative, depends on the parent value*/
+.outer
+{
+    width: 200px;
+    height: 200px;
+    background: blue;
+    border-radius: 10%;
+}
+.inner
+{
+    width: 50%;
+    height: 50%;
+    background: red;
+    border-radius: 10%;
+}

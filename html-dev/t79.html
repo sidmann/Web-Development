@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+            var data = ["Hello", 10.0, 78, true, 'abc', 'hello', false];
+            function print()
+            {
+                document.getElementById('e1').innerHTML = data.join(' and ');
+            }
+            function add()
+            {
+                //data[data.length] = 'new element';
+                data.push('new element');
+                print();
+            }
+        </script>
+    </head>
+    <body>
+        <div id="e1"></div>
+        <input type="button" value="button" onclick="add()">
+    </body>
+</html>

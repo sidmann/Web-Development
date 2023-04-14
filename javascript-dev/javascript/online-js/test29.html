@@ -1,0 +1,32 @@
+<form action="success.html">
+	Skills :
+	<input type="checkbox" name="skill" value="c"/> C &nbsp;&nbsp;
+	<input type="checkbox" name="skill" value="cpp"/> C++ &nbsp;&nbsp;
+	<input type="checkbox" name="skill" value="java"/> Java &nbsp;&nbsp;
+	<input type="checkbox" name="skill" value="orcl"/> Oracle<br/>
+	<input type="submit" value="submit" onclick="return validate()"/>
+</form>
+
+<script>
+	function validate()
+	{
+		var f1 = document.forms[0];
+		var skills = f1.skill;
+		var flag = false;
+		for(var i = 0; i < skills.length; i++)
+		{
+			if(skills[i].checked)
+			{
+				flag = true;
+				break;
+			}
+		}
+		if(!flag)
+		{
+			alert("Please select skills");
+			skills[0].focus();
+			return false;
+		}
+		return true;	
+	}
+</script>

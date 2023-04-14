@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-3.6.1.min.js"></script>
+        <style>
+            .login
+            {
+                width: 300px;
+                height: 190px;
+                background-color: aqua;
+                border: solid greenyellow 5px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="login">
+            <form>
+                <div class="form-group was-validated">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" name="username" id="username" class="form-control" required>
+                    <div class="invalid-feedback">Username is required</div>
+                </div>
+                <div class="form-group was-validated">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" name="password" id="password" class="form-control" required>
+                    <div class="invalid-feedback">password is required</div>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="submit" class="btn btn-success w-100">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

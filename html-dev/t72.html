@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script>
+            function test()
+            {
+            var v1 = document.getElementById("d1");
+            var v2 = v1.innerHTML;
+            alert(v2);
+
+            var v3 = document.getElementById("d2");
+            var v4 = v3.innerHTML;
+            alert(v4);
+
+            var v5 = document.getElementById("s1");
+            var v6 = v5.innerHTML;
+            alert(v6);
+            }
+        </script>
+    </head>
+    <body>
+        <div id="d1">something from d1</div> <br>
+        <h1 id="d2">something from d1</h1> <br>
+        <span id="s1">something from d1</span> <br>
+        <input type="button" value="button" onclick="test()">
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script>
+            function f1()
+            {
+                var data = ["Hello", 10.0, 78, true, 'abc', 'hello', false];
+                var str = "";
+                for (var i = 0; i < data.length; i++) 
+                {
+                    str += data[i] + ", ";
+                }
+                document.getElementById('e1').innerHTML = str;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="e1"></div>
+        <input type="button" value="button" onclick="f1()">
+    </body>
+</html>

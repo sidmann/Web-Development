@@ -1,0 +1,17 @@
+<script>
+    class D{
+        constructor(f1)
+        {
+            this.f1 = f1;
+        }
+    }
+    class E extends D{
+        constructor(f1,f2)
+        {
+            super(f1);
+            this.f2 = f2;
+        }
+    }
+    let v1 = new E(10,20);
+    console.log(v1);
+</script>

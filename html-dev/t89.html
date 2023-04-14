@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script>
+            var data = [
+                { firstName: "vijay", lastName: "b", age: 22, weight: 56.0 },
+                { firstName: "swetha", lastName: "t", age: 27, weight: 76.0 },
+                { firstName: "ramu", lastName: "p", age: 37, weight: 66.0 },
+            ]
+            function print() {
+                // document.getElementById('e1').innerHTML = data;
+                var v1 = "";
+                for(var i = 0; i < data.length; i++)
+                {
+                    v1 += data[i].firstName + ", " + 
+                          data[i].lastName + ", " + data[i].age + ", " + 
+                          data[i].weight + "<br>";
+                }
+                document.getElementById('e1').innerHTML = v1;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="e1"></div>
+        <input type="button" value="read-all" onclick="print()">
+    </body>
+</html>

@@ -1,0 +1,21 @@
+/* pseudo elements 
+:: before :: after creates an element and inserts before or after content */
+
+p::before
+{
+    content: "hello there";
+    /* display: block; */
+    background: #222;
+    font-weight: bold;
+    font-size: 2rem;
+    color: red;
+}
+p::after
+{
+    content: "thank you";
+    /* display: block; */
+    background: #222;
+    font-weight: bold;
+    font-size: 2rem;
+    color: red;
+}

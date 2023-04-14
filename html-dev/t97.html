@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <script>
+            // function f1()
+            // {
+            //     console.log('from f1');
+            // }
+            // f1();
+            // f1();
+            // f1();
+
+            // var f2 = function()
+            // {
+            //     console.log('from f2');
+            // }
+            // f2();
+            // f2();
+            // f2();
+            // f2();
+            
+            // var f3 = function()
+            //          {
+            //              console.log('from f3:' + arg1);
+            //          }
+            // f3('abc');
+            // f3(39);
+            // f3(true);
+            // f3(false);
+
+            var f4 = function(arg1)
+                     {
+                        console.log('f4 begin');
+                        arg1();
+                        console.log('f4 end');
+                     }
+            var f5 = function()
+                     {
+                        console.log('from f5');
+                     }
+                     f4(f5);
+        </script>
+
+    </head>
+    <body>
+
+    </body>
+</html>

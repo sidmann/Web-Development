@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+            var data = [10, 8, 20, 100, 200, 3, 6, 300, 4, 400, 5, 500, 1];
+            function print() {
+                document.getElementById('e1').innerHTML = data.join(', ');
+            }
+            function sort() {
+                data.sort(function test(a, b) {
+                return a - b;
+            });
+                print();
+            }
+        </script>
+    </head>
+    <body>
+        <div id="e1"></div>
+        <input type="button" value="read-all" onclick="print()">
+        <input type="button" value="sort" onclick="sort()">
+    </body>
+</html>

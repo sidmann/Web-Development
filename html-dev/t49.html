@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script>
+            function f1()
+            {
+                alert("i am from f1");
+            }
+            function f2()
+            {
+                alert("i am from f2");
+            }
+            function f3()
+            {
+                alert("i am from f3");
+            }
+            function f4()
+            {
+                alert("i am from f4");
+            }
+        </script>
+    </head>
+    <body onload="f1()">
+        <input type="text" onblur="f2()"> <br>
+        <select onchange="f3()">
+            <option>First Option</option>
+            <option>Second Option</option>
+            <option>Third Option</option>
+            <option>Fourth Option</option>
+        </select> <br>
+        <input type="button" value="button" onclick="f4()">
+    </body>
+</html>

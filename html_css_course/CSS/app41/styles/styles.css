@@ -1,0 +1,32 @@
+/*bckground position*/
+div
+{
+    height: 500px;
+    color: white;
+    border: 2px solid red;
+}
+.big-img
+{
+    background: url("../bigger.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.small-img
+{
+    background: url("../smaller.jpeg");
+    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: left;
+    background-position: right;
+    background-position: top;
+    background-position: bottom;
+    background-position: 40%, 60%;
+    background-position: 100%, 100%;
+}
+.folder-img
+{
+    background: url("../images/folderImage.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}

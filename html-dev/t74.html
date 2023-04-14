@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script>
+            function task1()
+            {
+            var v1 = document.getElementById("d1");
+            var v2 = document.getElementById("d2");
+            var c1 = v1.innerHTML;
+            var c2 = v2.innerHTML;
+            v1.innerHTML = c2;
+            v2.innerHTML = c1;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="d1">ABC</div> <br>
+        <div id="d2">XYZ</div> <br>
+        <input type="button" value="button" onclick="task1()">
+    </body>
+</html>

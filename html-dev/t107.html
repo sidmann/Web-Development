@@ -1,0 +1,14 @@
+<!-- rest operator (same as java's var arg) -->
+
+<script>
+    function f1(arg1, ...arg2)
+    {
+        console.log(arg1, arg2);
+    }
+
+    f1('abc', 'xyz', 'hello', 66, 8989);
+    f1('abc', 'xyz', 'hello');
+    f1('abc', 'xyz');
+    f1('abc');
+    f1('abc', 'xyz', 34, 40, false, 'test');
+</script>

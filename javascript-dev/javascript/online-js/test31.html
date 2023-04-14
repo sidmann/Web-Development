@@ -1,0 +1,37 @@
+<form action="success.html">
+	Education :
+	<select name="education" multiple>
+		<option value="be">BE</option>
+		<option value="mca">MCA</option>
+		<option value="pls" selected>Please select</option>
+		<option value="mba">MBA</option>
+		<option value="bba">BBA</option>
+		<option value="bca">BCA</option>
+		<option value="me">ME</option>
+	</select> <br/>
+	<input type="submit" value="submit" onclick="return validate()"/>
+</form>
+
+<script>
+	function validate()
+	{
+		var f1 = document.forms[0];
+		var education = f1.education;
+		var flag = false;
+		for(var i = 0; i < education.length; i++)
+		{
+			if(education[i].selected && education[i].value != "pls")
+			{
+				flag = true;
+				break;
+			}
+		}
+		if(!flag)
+		{
+			alert("Please select gender");
+			education.focus();
+			return false;
+		}
+		return true;
+	}
+</script>

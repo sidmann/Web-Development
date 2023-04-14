@@ -1,0 +1,25 @@
+p{
+    color:aqua
+}
+
+div
+{
+    color:red;
+    font-size: 80px;
+}
+
+span
+{
+    color:blue;
+}
+
+.c1
+{
+    color: red;
+    font-size: 100px;
+}
+
+.test
+{
+    font-weight: bold;
+}

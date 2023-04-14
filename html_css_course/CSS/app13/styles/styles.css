@@ -1,0 +1,16 @@
+.red
+{
+    color: red;
+    background: black;
+}
+.green
+{
+    color: green;
+    background: black;
+}
+span
+{
+   /* display: block;              check by commenting this also*/
+    text-transform: uppercase;
+    background: white;
+}

@@ -1,0 +1,49 @@
+/* transition 0 = 100%
+animation 0 1% 2%  .... 100% - multiple states*/
+div
+{
+    width: 200px;
+    height: 100px;
+    color: white;
+    margin: 10px;
+}
+.transition:hover
+{
+    background: yellow;
+    transform: translateX(100px);
+}
+.transition
+{
+    background-color: red;
+    /* transition: all 2s linear; */
+    transition: none  2s ease-in-out ;
+}
+.animation
+{
+    background: blue;
+    animation: move 5s infinite;
+}
+
+@keyframes move 
+{
+    0%
+    {
+        transform: translate(20px);
+        background: red;
+    }   
+    50%
+    {
+        transform: translateX(100px);
+        background: yellow;
+    }
+    75%
+    {
+        transform: translateX(-200px);
+        background: yellow;
+    }
+    100%
+    {
+        transform: translateX(20px);
+        background: green;
+    }
+}

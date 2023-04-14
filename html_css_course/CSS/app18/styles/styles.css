@@ -1,0 +1,21 @@
+/*RGB(Red, Green, Blue)0-255*/
+/*if we use these color by using random number then we will be get different color*/
+#first
+{
+    color: rgb(255, 0, 0);
+    background: rgb(0, 0, 0);
+}
+#second
+{
+    color: rgb(255, 255, 255);
+    background: rgb(0, 255, 0)
+}
+#third
+{
+    color: rgb(0, 0, 255);
+    background: rgb(200, 90, 230);
+}
+body
+{
+    background: rgb(150, 0, 200);
+}

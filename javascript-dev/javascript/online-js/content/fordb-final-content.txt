@@ -1,0 +1,44 @@
+JavaScript
+----------
+1. basics
+2. output
+3. input
+4. events
+5. execution
+6. default
+7. basic form validations
+    1. text, password and textarea
+    2. radio
+    3. checkbox
+    4. select
+    5. multi select
+8. getElementById
+    1. p, div and span
+    2. swap
+    3. hidden and show
+    4. change color
+9. display validation errors
+    1. single field
+    2. multiple fields
+10. objects
+    1. with fields
+    2. with functions
+    3. with nested
+11. arrays
+    1. basics
+    2. sort
+    3. array with objects
+12. form data manipulation
+    1. select all
+    2. reverse select all
+    3. dynamic population
+    4. transfer options
+    5. string functions
+    6. trim 
+    7. email validation
+    8. multi dimentional array
+    9. sorting records based on column
+    10. sorting options of drop down
+
+
+ 

@@ -1,0 +1,27 @@
+<p id="p1">initial content</p>
+<input type="button" 
+	   value="populate array content" 
+	   onclick="readArrayContent()"/>
+
+<script>
+	var elements = [
+			{firstName: "Vijay", lastName: "B", age: 22},
+			{firstName: "Mohan", lastName: "B1", age: 25},
+			{firstName: "Murali", lastName: "M", age: 29},
+			{firstName: "Ramu", lastName: "U", age: 21},
+			{firstName: "Naveen", lastName: "K", age: 23}
+	];
+	function readArrayContent()
+	{
+		var str = "";
+		var element;
+		for(var i = 0; i < elements.length; i++)
+		{
+			element = elements[i];
+			str += element.firstName + ", " + element.lastName + ", " + element.age + "<br/>";
+		}
+		document.getElementById("p1").innerHTML = str;
+	}
+</script>
+
+

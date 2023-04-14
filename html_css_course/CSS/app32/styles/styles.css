@@ -1,0 +1,17 @@
+
+  /* Css BOX Model*/
+  /*ctrl + shift + i  -> google chrome developer tool*/
+  h1,p
+  {
+    color: white;
+  }
+  h1
+  {
+    background: red;
+    /* padding-top: 40px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 100px; */
+    /* padding: 150px; */
+    padding: 200px 600px ;   /*1st top-bottom and 2nd for left-right
+  }

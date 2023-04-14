@@ -1,0 +1,39 @@
+<form action="">
+	Email: <input type="text" name="email" onblur="validate(this)"/><span id="emailError"></span>
+</form>
+
+<script>
+	function validate(field)
+	{
+		var value = field.value;
+		var emailError = document.getElementById("emailError");
+		var atIndex = value.indexOf('@');
+		if(atIndex == -1)
+		{
+			emailError.innerHTML = "should have @";
+			emailError.style.color="red";
+			return;
+		}
+		else
+		{
+			emailError.innerHTML = "";
+		}
+
+		var dotIndex = value.indexOf('.', atIndex);
+		if(dotIndex == -1)
+		{
+			emailError.innerHTML = "there should be min one dot after @";
+			emailError.style.color="red";
+			return;
+		}
+		else
+		{
+			emailError.innerHTML = "";
+		}
+		// like wise
+
+
+
+
+	}
+</script>

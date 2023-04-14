@@ -1,0 +1,12 @@
+/*color properties*/
+/* in CSS there are around 140 direct or named colors (builin)*/
+#first
+{
+    color: white;
+    background: black;
+}
+#second
+{
+    color: red;
+    background: yellow;
+}

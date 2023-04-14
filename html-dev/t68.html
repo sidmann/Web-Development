@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script>
+            function f1()
+            {
+                var v1 = document.forms[0];
+                var g1 = v1.gender;
+                var flag = false;
+                for (var i = 0; i < g1.length; i++) 
+                {
+                    if (g1[i].checked) 
+                    {
+                        flag = true;
+                        break;   
+                    }
+                    
+                }
+                if (!flag)
+                {
+                    alert("pls select the gender");
+                    g1[0].focus();
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form action="success.html">
+            Gender: <input type="radio" name="gender" value="m">Male &nbsp;&nbsp;
+                    <input type="radio" name="gender" value="f">Female <br>
+            <input type="submit" value="submit" onclick="return f1()">
+        </form>
+    </body>
+</html>

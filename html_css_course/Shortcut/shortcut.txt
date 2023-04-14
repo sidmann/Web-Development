@@ -1,0 +1,6 @@
+1. open integrated terminal = ctrl + `
+2. close all open editors tabs - ctrl + k + w
+3. palette to seasrch for a file = cntr + palettemove line up or doen = alt + up / down
+4. split editor window = cntrl + \
+5. format document shift + alt + F
+6. toggle sidebar - cntrl + b

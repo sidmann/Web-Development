@@ -1,0 +1,98 @@
+<table>
+	<tr>
+		<td>
+			Available <br/>
+			<select id="from" multiple>
+				<option value="1">Value1</option>
+				<option value="2">Value2</option>
+				<option value="3">Value3</option>
+				<option value="4">Value4</option>
+				<option value="5">Value5</option>
+			</select>
+		</td>
+		<td>
+			<input type="button" value=">>" onclick="addOptions()"/> <br/>
+			<input type="button" value="<<" onclick="removeOptions()"/> <br/>
+			<input type="button" value="UPP" onclick="moveToUpp()"/> <br/>
+			<input type="button" value="DOWN" onclick="moveToDown()"/>
+		</td>
+		<td>
+			Selected <br/>
+			<select id="to" multiple>
+			</select>
+		</td>
+	</tr>
+</table>
+
+<script>
+	function addOptions()
+	{
+		var from = document.getElementById("from");
+		var to = document.getElementById("to");
+		var fromOptions = from.options;
+		for(var i = 0; i < fromOptions.length; i++)
+		{
+			if(fromOptions[i].selected)
+			{
+				to.add(fromOptions[i]);
+				i--;
+			}
+		}
+	}
+	function removeOptions()
+	{
+		var from = document.getElementById("from");
+		var to = document.getElementById("to");
+		var toOptions = to.options;
+		for(var i = 0; i < toOptions.length; i++)
+		{
+			if(toOptions[i].selected)
+			{
+				from.add(toOptions[i]);
+				i--;
+			}
+		}
+	}
+	function moveToUpp()
+	{
+		var from = document.getElementById("from");
+		var fromOptions = from.options;
+		if(fromOptions.length > 0 && !fromOptions[0].selected)
+		{
+			moveToUpElement(fromOptions);
+		}
+		var to = document.getElementById("to");
+		var toOptions = to.options;
+		if(toOptions.length > 0 && !toOptions[0].selected)
+		{
+			moveToUpElement(toOptions);
+		}
+	}
+	function moveToUpElement(allOptions)
+	{
+		var prevOption = allOptions[0];
+		var currentOption;
+		for(var i = 1; i < allOptions.length; i++)
+		{
+			currentOption = allOptions[i];
+			if(currentOption.selected)
+			{
+				var tempText = currentOption.text;
+				var tempValue= currentOption.value;
+				currentOption.text = prevOption.text;
+				currentOption.value = prevOption.value;
+				prevOption.text = tempText;
+				prevOption.value = tempValue;
+			}
+			prevOption = currentOption;
+		}
+	}
+</script>
+
+
+
+
+
+
+
+

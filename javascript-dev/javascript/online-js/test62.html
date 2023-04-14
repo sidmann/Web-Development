@@ -1,0 +1,32 @@
+<form>
+	Skills:
+	<input type="checkbox" name="skill" value="c"/> C &nbsp;
+	<input type="checkbox" name="skill" value="c++"/> C++ &nbsp;
+	<input type="checkbox" name="skill" value="java"/> Java &nbsp;
+	<input type="checkbox" name="skill" value="orcl"/> Oracle &nbsp;
+	<input type="checkbox" name="skill" value="ng"/> Angular &nbsp;
+	<input type="checkbox" name="skill" value="hadoop"/> Hadoop &nbsp;
+	<input type="checkbox" name="skill" value=".net"/> .Net &nbsp;
+	<input type="checkbox" name="skill" value="php"/> PHP <br/>
+	Select All Skills:
+	<input type="checkbox" name="skillsController" onclick="selectAll()"/>
+</form>
+
+<script>
+	function selectAll()
+	{
+		var myForm = document.forms[0];
+		var skillsController = myForm.skillsController;
+		var skills = myForm.skill;
+		for(var i = 0; i < skills.length; i++)
+		{
+			skills[i].checked = skillsController.checked;
+		}
+	}
+</script>
+
+
+
+
+
+

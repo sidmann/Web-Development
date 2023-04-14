@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <script>
+            function f1()
+            {
+                var data = ["Hello", 10.0, 78, true, 'abc', 'hello', false];
+                //document.getElementById('e1').innerHTML = data.join(', ');
+                document.getElementById('e1').innerHTML = data.join(' & ');
+            }
+        </script>
+    </head>
+    <body>
+        <div id="e1"></div>
+        <input type="button" value="button" onclick="f1()">
+    </body>
+</html>

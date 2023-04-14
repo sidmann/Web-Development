@@ -1,0 +1,17 @@
+
+  h1,p
+  {
+    color: white;
+  }
+  h1
+  {
+    background: red;
+    padding: 20px;
+    border: 0.5rem dotted gold;
+    /* margin: 3rem; */
+  }
+  *
+  {
+    margin: 0px;
+  }
+  /*we can not keep background color for margin*/

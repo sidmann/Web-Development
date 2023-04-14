@@ -1,0 +1,274 @@
+CSS:
+===========================================================================================================================================================================
+(STYLING)
+1.inline styling: styling in tag.
+
+2.internal styling:giving style in style tag under head section.
+
+3.external styling: giving styles in css file and importing it under head section via link.
+
+4.if internal and external styling are there, then internal will given more preference.
+
+5.if internal and inline styling are there then inline given more preference.
+
+6.if all three are there, then first inline, then internal and after that external given the preference.
+
+7.we can give id to tags and can make function for it via #tag.
+ex:#top
+  {
+  }
+
+8.we can give class to tags and can make function of it
+ex:
+.function
+{
+}
+
+9.we can make function directly for any tag
+ex:p
+   { 
+   }
+
+10.we can group tags which have similar properies
+ex:h1,h2,h3 or .h1,.h2,.h3 or #h1,#h2,#h3
+{
+}
+
+11.*(universal function)
+==>apply for all content in body.
+==>ex:*
+     {
+     }
+===========================================================================================================================================================================
+(CSS PROPERTIES)
+1.FONT
+==>font-family
+==>font-size
+___________________________________________________________________________________________________________________________________________________________________________
+
+2.COLOR PROPERTIES:
+
+==>background: to give color to background.
+==>background-color: to give color to background.
+
+(methods to specify colours)
+1.rgb(red,green,blue)(range 0 to 255):
+
+ex:rgb(20,30,40)
+==>rgb(0,0,0) means black.
+==>rgb(255,255,255) means white.
+==>rgb(255,0,0) means red.
+==>rgb(0,255,0) means green.
+==>rgb(0,0,255) means blue.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2.rgba(red,green,blue,opacity/transparancy)(opacity ranging from 0 to 1 ==> by default 1):
+
+ex:rgba(20,30,40,1) ==> some colour with full visibility
+==>rgba(20,30,40,0.7) ==> some colour with 70% visibility
+==>rgba(0,0,0,0) ==> black with 0 visibilty
+==>rgba(255,255,255,1) ==> white with full visibility
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3.HSL(HUE,SATURATION,LIGHTNESS):
+
+==>for advanced users.
+==>hue: degree colour view 0 to 360.
+==>saturation: 0 to 100%.
+==>lightness: 0 to 100%. 0% means light & 100% means full dark.
+==>ex: hsl(290,40%,50%)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4.HEXADECIMAL REPRESENTATION(rr,gg,bb)
+==>EX:#ff0000 ==> pure red.
+==>#00ff00 ==> pure green.
+==>#0000ff ==> pure blue.
+==>#000 ==> it means 000000 full black.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5.HSLA
+==>HSL WITH OPACITY. 
+___________________________________________________________________________________________________________________________________________________________________________
+3.TEXT
+
+1.text-align: to give positon relative to page.
+ex:text-align: right/left/top/bottom/centre/justify etc.
+
+2.text-transform: to change text font style.
+ex:text-transform: uppercase,lowercase etc.
+
+3.text-indent: to give margin in starting of any phrase.
+
+4.text-decoration: to give decoration.
+ex:text-decoration: no decoration.
+___________________________________________________________________________________________________________________________________________________________________________
+4.FONT
+1.font-size: to give size to fonts.
+ex:font-size: 20px.
+
+2.font-family: to choose font type.
+___________________________________________________________________________________________________________________________________________________________________________
+5.HEIGHT AND WIDTH: GIVE HEIGHT AND WIDTH TO ANY DIV AREA OR PARAGRAPH AREA OR SPAN AREA.
+___________________________________________________________________________________________________________________________________________________________________________
+6.BACKGROUND
+1.background: to give colour to the background.
+
+2.background-color: to give color to backgound.
+
+3.background-url(): to put image in backgound.
+
+4.background-size: cover ==> to cover entire area till end.
+==>background-size: contain ==> to cover entire area where content is there.
+
+5.background-repeat:no repeat ==> to give no repetition to image.
+
+6.background-position: left,right,top,bottom etc.
+==>background-position: 40% 60% means 40% from x-axis and 60% from y-axis.
+==>100% 100% means extreme right.
+==>0% 0% means extreme left.
+___________________________________________________________________________________________________________________________________________________________________________
+7.PADDING: padding is gap between border and content.
+ex:padding: 100px ==> 100px gap from all side.
+==>padding-right/left/top/bottom:
+==>padding: 100px 200px; ==> it means 100px on top and bottom side and 200px right and left side.
+==>padding: 10px 20px 30px 40px; ==> 10px top,20px right,30px bottom,40px left.
+___________________________________________________________________________________________________________________________________________________________________________
+8.MARGIN: gap between border and page.
+ex:margin: 100px ==> 100px margin from all sides of page.
+
+note:suppose if you dont want any gap beyween your content border and page than give.
+*
+{
+  margin:0px;
+  padding:0px;
+}
+___________________________________________________________________________________________________________________________________________________________________________
+9.BORDER:give border to content
+
+1.border-type: solid/round/dotted etc.
+
+2.border-size: any px;
+
+3.border-color: any color;
+
+4.u can write like border: 10px(size) solid(type) red(color);
+
+5.border-width: right/top/bottom/left.
+
+6.border-radius: to give radius to border.
+___________________________________________________________________________________________________________________________________________________________________________
+10.WORD,LETTER,LINE PROPERTIES
+
+1.word-spacing: any px ==>give space between words.
+
+2.letter-spacing: any px ==>give space between letters.
+
+3.line-height: line height of any sentance or paragraph.
+
+4.line-width: line width of any sentance or paragraph.
+___________________________________________________________________________________________________________________________________________________________________________
+11.OUTLINE:after border property
+1.outline-offset: 10px ==> px are in positive so it will show outside the boundary,if negative than it will show in the boundary.
+
+2.outine-style: solid like etc.
+
+3.outline-width: any px;
+___________________________________________________________________________________________________________________________________________________________________________
+12.LINE GRADIENT: to give combination of color to content.
+ex:background: linear-gradient(red,green) ==> combination of red and green.
+
+==> background: linear-gradient(to top,blue,green); ==> means from top blue to green.
+
+==> background: linear-gradient(to left,blue,green,red,yellow,#f15025); ==> means from left to this colour combinations.
+
+==> background: linear-gradient(360deg,red,green); ==> combination in circular shape.
+
+==> background: linear-gradient(blue 30%,red 70%); ==> combination in persantage.
+
+==> background: linear-gradient(rgba(147, 112, 112, 0.2),rgba(0,0,0,0.9)); ==> combination in rgba form.
+___________________________________________________________________________________________________________________________________________________________________________
+13.BOX-SIZING:whenever we are giving padding content height and width changing accordingly.so by boxing we are fixing our content size.
+1.box-sizing: border-box ==> content limits till border.
+
+2.box-sizing: content-box ==>  content limits till content size.
+___________________________________________________________________________________________________________________________________________________________________________
+14.POSITION:Position of one content relative to another content.
+
+1.position: absolute ==> position absolute means fix postion.
+
+2.position: relative ==> position relative means relative position to each other.
+
+3.Z-index: positive means content is over another content.
+
+4.Z-index: negative means content is under another content.
+___________________________________________________________________________________________________________________________________________________________________________
+15.p::before : to excute anything before paragraph.
+
+  ==> p::after:to execute anything after paragraph.
+
+ex:p::before or p::after
+{
+  content:"yes i am in";
+  font size:20px;'
+  border:30px solid redl
+}
+___________________________________________________________________________________________________________________________________________________________________________
+16.hover:to change the current content view while mouse curser is on content.
+==>ex:function:hover
+{
+  background:red;
+  text transform:capital;
+}
+__________________________________________________________________________________________________________________________________________________________________________
+17.TRANSFORM:to shift podition of content in x y or z direction.
+
+1.transform:traslateX or Y or Z(100px)==>shifting 100px from x.
+
+2.trasnform:translate(100px,200px)==>means translate in x and y direction.
+
+3.transform:scaleX or Y or Z(10px)==>edging change apply and see the real change
+
+4.transform:skewx or y or z(any deg) ==> see the real output.
+___________________________________________________________________________________________________________________________________________________________________________
+18.TRANSITION:Transition means change in property for a particuler time.
+
+1.transition-property:background,border-radius(which property u have to trasit)
+
+2.transition-time:4s (after hoe much time you have to transit.
+___________________________________________________________________________________________________________________________________________________________________________
+19.ANIMATION:to give animation to content.
+
+animantion:move 5s infinte;(means after evry 5s infinite times.
+
+==>with animation u have to give time interval and relative positions.for that @keyframes move is used
+
+==>@keyframes move
+{
+   0%(starting time interval)
+   {
+     transform:translateX(10px); 
+   }
+   10%(after 10% time of movement)
+   {
+     transform:translateY(20px);
+   }
+}
+___________________________________________________________________________________________________________________________________________________________________________
+CSS MEASURING UNITS:
+1.pixel:absolute unit.(independent unit)
+
+2.persantage:relative unit.depends upon parent value.
+
+3.em:depends on parent value.
+==>1em == 16px;
+
+4.rem:depends upon root value.
+==>suppose html root tag have width 3px;than below tag who child if have width 3rem it means 3*3 == 9 rem.
+
+5.view height(vh) and view width(vw).
+
+
+
+
+
+

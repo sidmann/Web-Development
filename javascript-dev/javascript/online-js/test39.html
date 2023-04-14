@@ -1,0 +1,24 @@
+
+<form action="success.html">
+	First Name : 
+	<input type="text" name="firstName"/>
+	<span id="firstNameError"></span> <br/>	
+	<input type="submit" onclick="return validate()" value="submit"/>
+</form>
+<script>
+	function validate()
+	{
+		var thisForm = document.forms[0];
+		var firstName = thisForm.firstName;
+		if(firstName.value.length == 0)
+		{
+			var v1 = document.getElementById("firstNameError");
+			v1.style.color="red";
+			v1.innerHTML = "Enter First Name";
+			return false;
+		}
+	}
+</script>
+
+
+

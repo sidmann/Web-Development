@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script>
+            function task1()
+            {
+            var v1 = document.forms[0];
+            var v2 = v1.firstName;
+            if (v2.value.length == 0)
+            {
+                document.getElementById("firstNameError").innerHTML = "Pls enter first name";
+                return false;
+            }
+            }
+        </script>
+        <style>
+            .error
+            {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="success.html">
+            First Name:<input type="text" name="firstName">
+            <span id="firstNameError" class="error"></span> <br>
+            <input type="submit" value="submit" onclick="return task1()">
+        </form>
+    </body>
+</html>

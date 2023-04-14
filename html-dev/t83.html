@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            var data = ["Hello", 10.0, 78, true, 'abc', 'hello', false];
+            function print() {
+                document.getElementById('e1').innerHTML = data.join(' and ');
+            }
+            function remove() {
+                data.splice(2, 0, 'test', 8989898);
+                print();
+            }
+        </script>
+    </head>
+    <body>
+        <div id="e1"></div>
+        <input type="button" value="read-all" onclick="print()">
+        <input type="button" value="button" onclick="remove()">
+    </body>
+</html>

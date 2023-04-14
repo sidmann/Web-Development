@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script>
+            function test()
+            {
+                if(document.forms[0].firstName.value.length == 0)
+                {
+                    alert("first name is required");
+                    document.forms[0].firstName.focus();
+                    return false;
+                }
+                if(document.forms[0].lastName.value.length == 0)
+                {
+                    alert("last name is required");
+                    document.forms[0].lastName.focus();
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form action="success.html">
+            First Name: <input type="text" name="firstName"> <br>
+            Last Name: <input type="text" name="lastName"> <br>
+            <input type="submit" value="submit" onclick="return test()">
+        </form>
+    </body>
+</html>

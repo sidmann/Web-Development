@@ -1,0 +1,21 @@
+<p id="p1">initial content</p>
+<input type="button" 
+	   value="populate array content" 
+	   onclick="readArrayContent()"/>
+<input type="button" 
+	   value="remove last element" 
+	   onclick="removeLastFromArray()"/>
+<script>
+	var elements = [100, "hello", 30.7, 40, true, 20];
+	function readArrayContent()
+	{
+		document.getElementById("p1").innerHTML = elements.join(", ");
+	}
+	function removeLastFromArray()
+	{
+		elements.splice(elements.length - 1, 1);
+		readArrayContent();
+	}
+</script>
+
+

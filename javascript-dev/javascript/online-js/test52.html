@@ -1,0 +1,26 @@
+<p id="p1">initial content</p>
+New Element : <input type="text" id="newElement"/> <br/>
+Location: <input type="text" id="location"/> <br/>
+<input type="button" 
+	   value="insert new element" 
+	   onclick="insertNewElementAtSpecifiedLocation()"/>
+<input type="button" 
+	   value="populate array content" 
+	   onclick="readArrayContent()"/>
+
+<script>
+	var elements = [100, "hello", 30.7, 40, true, 20];
+	function readArrayContent()
+	{
+		document.getElementById("p1").innerHTML = elements.join(", ");
+	}
+	function insertNewElementAtSpecifiedLocation()
+	{
+		var newElement = document.getElementById("newElement").value;
+		var index = document.getElementById("location").value;
+		elements.splice(index, 0, newElement);
+		readArrayContent();
+	}
+</script>
+
+

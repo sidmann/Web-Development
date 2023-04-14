@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <style>
+            .container
+            {
+                border: 2px solid blue;
+                display: grid;
+                grid-template-columns: auto auto auto auto auto;
+            }
+            .item
+            {
+                border: 2px solid red;
+                /* width: 100px; */
+                /* height: 50px; */
+            }
+            .item1
+            {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+            .item2
+            {
+                grid-column-start: 3;
+                grid-column-end: 6;
+            }
+            .item3
+            {
+                grid-row-start: 2;
+                grid-row-end: 4;
+            }
+        </style>
+    </head>
+    <body>
+            <div class="container">
+                <div class="item item1">div1</div>
+                <div class="item item2">div2</div>
+                <div class="item item3">div3</div>
+                <div class="item">div4</div>
+                <div class="item">div5</div>
+                <div class="item">div6</div>
+                <div class="item">div7</div>
+                <div class="item">div8</div>
+            </div>
+    </body>
+</html>

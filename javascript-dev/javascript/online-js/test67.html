@@ -1,0 +1,27 @@
+<form action="">
+	First Name: <input type="text" name="firstName" onblur="trim(this)"/> <br/>
+	Last Name: <input type="text" name="lastName" onblur="trim(this)"/> <br/>
+	age: <input type="text" name="age" onblur="trim(this)"/> <br/>
+
+</form>
+
+<script>
+	function trim(field)
+	{
+		var value = field.value;
+		var firstChar = value.charAt(0);
+		while(firstChar == ' ')
+		{
+			value = value.substring(1, value.length);
+			firstChar = value.charAt(0);
+		}
+
+		var lastChar = value.charAt(value.length - 1);
+		while(lastChar == ' ')
+		{
+			value = value.substring(0, value.length - 1);
+			lastChar = value.charAt(value.length - 1);
+		}
+		field.value = value;
+	}
+</script>

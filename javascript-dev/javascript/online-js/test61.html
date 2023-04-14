@@ -1,0 +1,80 @@
+<p id="p1">initial content</p>
+<input type="button" 
+	   value="populate array content" 
+	   onclick="readArrayContent()"/> <br/>
+
+<input type="button" 
+	   value="sort array content based on first name" 
+	   onclick="sortArrayContentBasedOnFirstName()"/>
+<input type="button" 
+	   value="sort array content based on last name" 
+	   onclick="sortArrayContentBasedOnLastName()"/>
+<input type="button" 
+	   value="sort array content based on age" 
+	   onclick="sortArrayContentBasedOnAge()"/>
+
+<script>
+	var elements = [
+			{firstName: "Vijay", lastName: "B", age: 22},
+			{firstName: "Mohan", lastName: "B1", age: 25},
+			{firstName: "Murali", lastName: "M", age: 29},
+			{firstName: "Ramu", lastName: "U", age: 21},
+			{firstName: "Naveen", lastName: "K", age: 23}
+	];
+	function readArrayContent()
+	{
+		var str = "";
+		var element;
+		for(var i = 0; i < elements.length; i++)
+		{
+			element = elements[i];
+			str += element.firstName + ", " + element.lastName + ", " + element.age + "<br/>";
+		}
+		document.getElementById("p1").innerHTML = str;
+	}
+	function sortArrayContentBasedOnFirstName()
+	{
+		elements.sort(function(a, b){
+					if(a.firstName > b.firstName)
+					{
+						return 1;
+					}
+					else if(a.firstName < b.firstName)
+					{
+						return -1;
+					}
+					else
+					{
+						return 0;
+					}
+				
+				});
+		readArrayContent();
+	}
+	function sortArrayContentBasedOnLastName()
+	{
+		elements.sort(function(a, b){
+					if(a.lastName > b.lastName)
+					{
+						return 1;
+					}
+					else if(a.lastName < b.lastName)
+					{
+						return -1;
+					}
+					else
+					{
+						return 0;
+					}
+				
+				});
+		readArrayContent();
+	}
+	function sortArrayContentBasedOnAge()
+	{
+		elements.sort(function(a, b){ return a.age - b.age; });
+		readArrayContent();
+	}
+</script>
+
+
